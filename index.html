@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Instagram</title>
+        <!-- <link rel="stylesheet" href="./apadtive.css" /> -->
+        <link rel="stylesheet" href="./styleMinor.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.cdnfonts.com/css/billabong"
+            rel="stylesheet"
+        />
+        <title>@Instagram</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <img src="./icon/instagram-new.webp" width=150px alt="">
+                <div class="menu">
+                    <div class="menu_list">
+                        <div class="dom">
+                            <img
+                                src="./icon/home-svgrepo-com.svg"
+                                alt="#"
+                                class="home_img"
+                            />
+                            <div class="home">Главная</div>
+                        </div>
+                        <div class="searchh">
+                            <img
+                                src="./icon/search-svgrepo-com.svg"
+                                alt="#"
+                                class="search_img"
+                            />
+                            <div class="search">
+                                <input type="text" id="searchInp" />
+                            </div>
+                        </div>
+                        <div class="safarii">
+                            <img
+                                src="./icon/compass-svgrepo-com.svg"
+                                alt="#"
+                                class="safari_img"
+                            />
+                            <div class="safari">Интересное</div>
+                        </div>
+                        <div class="directt">
+                            <img
+                                src="./icon/massage-svgrepo-com.svg"
+                                alt="#"
+                                class="direct_img"
+                            />
+                            <div class="direct">Сообщения</div>
+                        </div>
+                        <div class="content-nott">
+                            <img
+                                src="./icon/like-svgrepo-com.svg"
+                                alt="#"
+                                class="content_img"
+                            />
+                            <div class="notifications">Уведомления</div>
+                        </div>
+                        <div class="creatte">
+                            <img
+                                src="./icon/create-svgrepo-com.svg"
+                                alt="#"
+                                class="create_img"
+                            />
+                            <div class="create">Создать</div>
+                        </div>
+                        <div class="profille">
+                            <img
+                                src="./icon/name.jpg"
+                                alt="#"
+                                class="profile_img"
+                            />
+                            <div class="profile">Профиль</div>
+                        </div>
+                        <div class="yet">
+                            <img
+                                src="./icon/menu.png"
+                                alt=""
+                                class="yet_img"
+                            />
+                            <div class="yet">Ещё</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-info">
+                    <div class="info-pfp">
+                        <img
+                            src="./icon/name.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="info-block">
+                        <div class="nickname">
+                            <p>aubakirovv__</p>
+                            <button class="edit-profile-btn">
+                                Edit Profile
+                            </button>
+                        </div>
+                        <div class="follower-info">
+                            <p>0 публикации</p>
+                            <p>225 подписчиков</p>
+                            <p>215 подписок</p>
+                        </div>
+                    </div>
+                </div>
+                <!--? Account info  -->
+                <!-- add -->
+                <div class="addList">
+                    <button class="addBtn">
+                        <img src="./icon/photo_5424755325522788179_x.jpg" alt="" />
+                    </button>
+                </div>
+                <!--add modal -->
+                <dialog id="diaLog">
+                    <form method="dialog">
+                        <section>
+                            <input
+                                type="text"
+                                name=""
+                                id="urlInp"
+                                placeholder="img"
+                            />
+                        </section>
+                        <menu>
+                            <button id="cancel" type="reset">close</button>
+                            <button id="addMenu">add</button>
+                        </menu>
+                    </form>
+                </dialog>
+                <!--add modal -->
+
+                <!--? Highlights -->
+
+                <!-- * PAGINATION  -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination d-flex justify-content-center">
+                        <li class="page-item prev">
+                            <a class="page-link" href="#">prev</a>
+                        </li>
+                        <div class="paglist d-flex"></div>
+                        <li class="page-item next">
+                            <a class="page-link" href="#">next</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- pagination  -->
+
+                <div class="photos-block">
+                    <hr />
+                    <div class="photos-buttons">
+                        <div class="btn_publick">
+                            <img
+                                src="./icon/publication.png"
+                                alt="#"
+                                class="img_btn"
+                            />
+                            <button class="publication-btn">Публикации</button>
+                        </div>
+                        <div class="save_btn">
+                            <img
+                                src="./icon/ribbon.png"
+                                alt="#"
+                                class="save_img"
+                            />
+                            <button class="saves-btn">Сохраненное</button>
+                        </div>
+                        <div class="noded_btn">
+                            <img
+                                src="./icon/identification.png"
+                                alt="#"
+                                class="noded_img"
+                            />
+                            <button class="noted-btn">Отметки</button>
+                        </div>
+                    </div>
+                    <div class="photos">
+                        <div class="photo-item"></div>
+                    </div>
+                </div>
+
+                <!-- Photo modal -->
+                <dialog id="photo-add" class="modal">
+                    <form method="dialog">
+                        <section>
+                            <input class="likes" type="text" name="" id="likes" placeholder="likes"/>
+                            <input class="comments" type="text" name="" id="comments" placeholder="comments"/>
+                            <input class="views" type="text" name="" id="views" placeholder="views"/>
+                            <input class="img_url" type="text" name="" id="photo" placeholder="img url"/>
+                        </section>
+                        <menu>
+                            <button id="cancel2" type="reset" class="btn_close">
+                                close
+                            </button>
+                            <button id="photoAdd" class="btn_add">add</button>
+                        </menu>
+                    </form>
+                </dialog>
+                <!-- modal photo -->
+
+                <!-- edit modal photo -->
+                <dialog id="photo-edit">
+                    <form method="dialog" class="edit-form">
+                        <section class="edit-section">
+                            <input
+                                type="text"
+                                name=""
+                                id="editLikes"
+                                placeholder="likes"
+                            />
+                            <input
+                                type="text"
+                                name=""
+                                id="editComments"
+                                placeholder="comments"
+                            />
+                            <input
+                                type="text"
+                                name=""
+                                id="editViews"
+                                placeholder="views"
+                            />
+                            <input
+                                type="text"
+                                name=""
+                                id="editPhoto"
+                                placeholder="img url"
+                            />
+                        </section>
+                        <menu>
+                            <button id="cancel3" type="reset">close</button>
+                            <button id="photo-edit-btn">Edit</button>
+                        </menu>
+                    </form>
+                </dialog>
+                <!-- end modal edit photo -->
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
